@@ -1,0 +1,150 @@
+body{
+    animation: fade 2s ease-in .1s forwards;
+    background-color:#1d6d7b ;
+    margin:0;
+    overflow-x: hidden;
+}
+
+html {
+    height:100%;
+  }
+
+
+.cust-bg{
+    background-color: blanchedalmond;
+    opacity: 0.1;
+}
+
+.FooterPort{
+background-color: transparent
+}
+
+footer section.section-B1 {
+    padding-top: 76px;
+}
+
+footer section .heading {
+    display: inline-block;
+}
+
+.section-B1 {
+    height: 262.8px;
+    padding: 40px;
+}
+
+footer .section-B1>.klist.o-f {
+    width: 600px;
+    height: 100px;
+    display: flex;
+}
+
+footer .section-B1>.klist.o-f.i-f {
+    justify-content: flex-start;
+}
+
+
+.newShad{
+    box-shadow: 0px 1px 9px 1px rgb(39, 39, 39);
+
+}
+
+.newShad1{
+    box-shadow: 0px -3px 9px 1px rgb(39, 39, 39);
+
+}
+
+
+@keyframes fade {
+    from {
+      opacity: 0.01;
+      transform: scale(0.994);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /*[poiuhygbhjk*/
+  
+  .bg {
+    animation:slide 7s ease-in-out infinite alternate;
+    background-image: linear-gradient(-65deg, #0c3e48 50%, rgb(0, 76, 126) 50%, rgb(16, 146, 233) 75%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:8s;
+  }
+  
+  .bg3 {
+    animation-duration:9s;
+  }
+    
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+.card-cont{
+  background: #9ceffd1c;  
+  position: relative;
+  height: 550px;
+  overflow-y: hidden;
+}
+
+.card-cont-1{
+  height: 350px;
+}
+
+
+.container-port-1{
+  max-width: 250px;
+  min-width: 500px;
+  height: auto;
+}
+
+.container-port-2{
+  max-width: 250px;
+  min-width: 750px;
+  max-height: auto;
+}
+
+/* animation */
+.wavy{
+  position: relative;
+}
+
+.wavy span{
+  position: relative;
+  display: inline-block;
+  color: rgb(255, 253, 253);
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(.1s*var(--i))
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0px)
+  }
+  20%{
+    transform: translateY(-14px)
+  }
+  40%, 100%{
+    transform: translateY(0px)
+  }
+}
+
+

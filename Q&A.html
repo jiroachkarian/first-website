@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        Homepage
+        HomePage
     </title>
 
     <!--favicon-->
@@ -17,13 +17,11 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="theme-color" content="#FFA500">
 
-    <!--Font Awesome-->
-    <script src="https://use.fontawesome.com/756e1a65b6.js"></script>
-
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
+    <link rel="stylesheet" type="text/css" href="f&a.css">
 
 
     <!--bootstrap-->
@@ -34,13 +32,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link src="img/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link src="img/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link src="img/favicon/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link src="img/favicon/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-195021742-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -50,13 +48,10 @@
   gtag('config', 'UA-195021742-1');
 </script>
 
-
-
 </head>
 
 <body>
-<!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><img src="img/my logo/logo.png" style="max-width: 100px;" alt="kaklans logo" /></a>
         <button class="navbar-toggler btn-hover" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -70,63 +65,57 @@
                 <li class="nav-item">
                     <a class="nav-link" href="experiments.html">Experiments</a>
                 </li>
-                
-                
         </div>
     </nav>
 
 
-    <div id="home-page-slider" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#home-page-slider" data-slide-to="0" class="active"></li>
-            <li data-target="#home-page-slider" data-slide-to="1"></li>
-            <li data-target="#home-page-slider" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="portfolio.html">
-                    <img src="img/homepage slider img/web maker-1.png" class="d-block w-100 p-h " alt="web desining imgage ">
-                    <div class="carousel-caption d-none d-md-block pv">
-                        <h5>Web Designer</h5>
-                        <p>Hello, my name is Jiraer Achkarian known as Jiro, and I'm a Frontend Web Developer, I work on freelance project by transforming mockups into Html and Css.</p>
-                    </div>
+    <div class="container main">
 
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="experiment-number-1.html">
-                <img src="img/card image/honey.png" class="d-block w-100 p-h" alt="bees">
-                <div class="carousel-caption d-none d-md-block pv">
-                    <h5>Experiment N<sup>1</sup></h5>
-                    <p>This project is about a human experiment between three species. It was made by a mad scientist who took their faces and turned them into a swipeable AI.</p>
-                </div>
+        <div class="col-sm center">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" style="display: inline-flex;">
+                    <li class="breadcrumb-item"><a class="link" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Q & A</li>
+                </ol>
+            </nav>
+        </div>
 
-                </a>
+        <!--Q & A-->
+        <div class="col-sm">
+            <div class="center">
+                <p>Who are the mad scientist from Experiment N<sup>1</sup></p>
             </div>
-        
-            
-            <div class="carousel-item">
-                <a href="thegame.html">
-                <img src="img/card image/emptyimg.jpg" class="d-block w-100 p-h" alt="bees">
-                <div class="carousel-caption d-none d-md-block pv">
-                    <h5>Click on it Elio</h5>
-                    <p>find the keyword</p>
-                </div>
+            <div class="center">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Show
+                </button>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#home-page-slider" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#home-page-slider" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                The mad scientist are cold blooded murderers who have approximately 30,000 iq much much higher than a average human beign, and such a high iq turned their brain and body into a psychopathic killing machine and made them thirty to the human pain by making
+                inhuman, alienish experiments on them. REMEMBER WHEN YOU'RE TREASURE HUNTING DIG A BIGGER CIRCLE ABOVE THE PLACE WERE THE METAL DETECROR BEEPS CZ YOU'LL SAY AHHHHHHH
+            </div>
+        </div>
     </div>
 
+    <div>
+        <input style="cursor: pointer; background: transparent; border: none !important;" id="ko" type='button' onclick="bleep.play()"/>
 
-    <!--  Footer -->
+    </div>
+
+    <div>
+        <input style="cursor: pointer; background: transparent; border: none !important;" id="ko" type='button' onclick="bap.play()"/>
+
+    </div>
+
+ 
+
+
+    <!--  footer  -->
     <footer>
+
+
         <section class="section-B">
 
             <div class="klist o-f i-f">
@@ -140,7 +129,7 @@
                     Kaklan
                 </span>
                 <ul>
-                    <li><a class="nav-link" href="Q&A.html">Q & A </a></li>
+                    <li><a class="nav-link" href="Q&A.html">Q & A</a></li>
                 </ul>
             </div>
             <div class="klist">
@@ -155,6 +144,29 @@
         </section>
     </footer>
 
+
 </body>
+
+<script>
+    $('.collapse').collapse()
+
+
+    $('[data-toggle="collapse"]').click(function() {
+        $(this).toggleClass("active");
+        if ($(this).hasClass("active")) {
+            $(this).text("Show");
+        } else {
+            $(this).text("Hide");
+        }
+    });
+</script>
+
+<script>
+    var bleep = new Audio('treasure/ah.mp3');
+ 
+    var bap = new Audio('treasure/oh.mp3');
+
+</script>
+
 
 </html>
